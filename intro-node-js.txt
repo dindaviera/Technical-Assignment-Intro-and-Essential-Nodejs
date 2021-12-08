@@ -1,0 +1,34 @@
+1. Mohon jelaskan apa itu Node.js? Apa perbedannya dengan JavaScript?
+jawab : 
+Node.js adalah tempat berjalannya JavaScript atau runtime environment untuk JavaScript yang bersifat open-source dan cross-platform. 
+Perbedaan Node.js dengan JavaScipt yaitu JavaScript merupakan bahasa pemograman yang digunakan frontend dan untuk menampilkan hasilnya 
+membutuhkan browser.
+Sedangkan node.js adalah runtime atau tempat berjalannya JavaScript sehingga kita dapat menjalaankan javascript di server menggunakan 
+terminal command line menggunakan perintah "nodd".
+
+2. Mohon jelaskan arsitektur dari Node.js?
+jawab : Node.js menggunakan arsitektur "Single Thread Event Loop" dalam menghendle beberapa permintaan client.  Node.js processing model didasarkan pada 
+mekanisme callback pada JavaScipt.  Beberapa part pada Node.Js arsitektur adalah :
+- Request
+- Node.js server 
+- Event queue
+- Thread Pool
+- Event Loop
+- External Resources
+    cara berjalannya arsitektur pada node.js adalah ada sebuah aplikasi yang akan dijalankan di V8 Engine (runtime javascript), lalu akan dieksekusi pada library Libuv.
+semua proses yang dibuat akan masuk ke dalam antrian event queue kemudian dijalankan. Setelah itu akan dilihat terlebih dahulu, kalau blocking maka akan diteruskan untuk 
+menjalankan proses selanjutnya. Apabila semua taks sudah selesai, maka akan eksekusi yang namanya callback. Callback adalah sebuah function yg akan dieksekusi ketika suatu 
+perintah selesai dijalankan.  
+
+
+3. Ape perbedaan antara Built-in Module, External Module, dan Custom Module pada Node.js?
+jawab : 
+Built-in module : merupakan module bawanan pada node.js 
+External module : merupakan module yang perlu dilakukan instalasi terlebih dahulu agar dapat digunakan pada node.js
+Custom module : merupakan module yang dibuat sendiri / disesuaikan dengan kebutuhan dalam penggunaanya
+
+4. Sebutkan salah satu contoh dari Built-in Module, External Module, dan Custom Module pada Node.js?
+jawab :
+Built-in module : http, fs, url, querystring, os, dll
+External module : bower, csv, debug, mongoose, mongodb
+Custom module : custommodule untuk melakukan operasi perhitungan matematika
